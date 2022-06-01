@@ -15,7 +15,7 @@
       "order": 1
     },
     {
-      "name": "Accessories",
+      "name": "Skin",
       "order": 2
     },
     {
@@ -35,7 +35,7 @@
       "order": 6
     },
     {
-      "name": "Skin",
+      "name": "Accessories",
       "order": 7
     }
   ]

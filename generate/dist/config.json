@@ -1,0 +1,42 @@
+{
+    "assset_dir": "assets/",
+    "output_dir": "output/",
+    "json_dir": "json/",
+    "thumbnail_dir": "thumbnail/",
+    "csv_file_name": "metadata.csv",
+    "max_image_generate": 5000,
+    "thumbnail": {
+        "width": 300,
+        "height": 300
+    },
+    "traits": [
+        {
+            "name": "Background",
+            "order": 1
+        },
+        {
+            "name": "Skin",
+            "order": 2
+        },
+        {
+            "name": "Clothes",
+            "order": 3
+        },
+        {
+            "name": "Expression",
+            "order": 4
+        },
+        {
+            "name": "Eyes",
+            "order": 5
+        },
+        {
+            "name": "Headgear",
+            "order": 6
+        },
+        {
+            "name": "Accessories",
+            "order": 7
+        }
+    ]
+}
