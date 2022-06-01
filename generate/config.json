@@ -11,36 +11,32 @@
   },
   "traits": [
     {
-      "name": "background",
+      "name": "Background",
       "order": 1
     },
     {
-      "name": "body",
+      "name": "Accessories",
       "order": 2
     },
     {
-      "name": "clothes",
+      "name": "Clothes",
       "order": 3
     },
     {
-      "name": "face",
+      "name": "Expression",
       "order": 4
     },
     {
-      "name": "eyes",
+      "name": "Eyes",
       "order": 5
     },
     {
-      "name": "mouth",
+      "name": "Headgear",
       "order": 6
     },
     {
-      "name": "hat",
+      "name": "Skin",
       "order": 7
-    },
-    {
-      "name": "special",
-      "order": 8
     }
   ]
 }
