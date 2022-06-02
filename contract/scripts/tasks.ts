@@ -4,9 +4,9 @@ import { getContract, getEnvVariable, getProvider } from "./helpers";
 import fs from "fs";
 import { addresses } from "./whitelist_import";
 // @ts-ignore
-import type { KawaiiMetaCollage } from "../typechain-types";
-import MerkleTree from "merkletreejs";
-import keccak256 from "keccak256";
+// import type { KawaiiMetaCollage } from "../typechain-types";
+// import MerkleTree from "merkletreejs";
+// import keccak256 from "keccak256";
 
 task("checksum", "Change address to checksum address")
   .addParam("address", "wallet address")
@@ -14,26 +14,26 @@ task("checksum", "Change address to checksum address")
     console.log(ethers.utils.getAddress(taskArgs.address));
   });
 
-task("setMerkleRoot", "set Merkle Root on WhiteList").setAction(
-  async (taskArgs, hre) => {
-    for await (const line of addresses) {
-      if (!ethers.utils.isAddress(line)) throw Error(line + "is not valid.");
-    }
+// task("setMerkleRoot", "set Merkle Root on WhiteList").setAction(
+//   async (taskArgs, hre) => {
+//     for await (const line of addresses) {
+//       if (!ethers.utils.isAddress(line)) throw Error(line + "is not valid.");
+//     }
 
-    const contract: KawaiiMetaCollage = (await getContract(
-      getEnvVariable("CONTRACT_NAME"),
-      hre,
-      getProvider(hre)
-    )) as KawaiiMetaCollage;
+//     const contract: any = (await getContract(
+//       getEnvVariable("CONTRACT_NAME"),
+//       hre,
+//       getProvider(hre)
+//     )) as any;
 
-    const leafTree = addresses.map((x) => keccak256(x));
-    const tree = new MerkleTree(leafTree, keccak256, { sortPairs: true });
-    const rootTree = tree.getRoot();
+//     const leafTree = addresses.map((x) => keccak256(x));
+//     const tree = new MerkleTree(leafTree, keccak256, { sortPairs: true });
+//     const rootTree = tree.getRoot();
 
-    const transactionResponse = await contract.setMerkleRoot(rootTree);
-    console.log(`Transaction Hash: ${transactionResponse.hash}`);
-  }
-);
+//     const transactionResponse = await contract.setMerkleRoot(rootTree);
+//     console.log(`Transaction Hash: ${transactionResponse.hash}`);
+//   }
+// );
 
 task("ownerMint", "Mints from the NFT contract. (only Owner)")
   .addParam("number", "Ownermint Number")

@@ -6,6 +6,7 @@
   "scripts": {
     "build": "hardhat compile",
     "dev": "hardhat node",
+    "test": "hardhat test",
     "flatten": "poa-solidity-flattener ./contracts/GenerativeNFT.sol",
     "lint:eslint": "eslint . --ext ts,tsx",
     "fix:eslint": "eslint . --ext ts,tsx --fix"
@@ -16,7 +17,9 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
     "@poanet/solidity-flattener": "^3.0.7",
+    "@typechain/ethers-v5": "^10.0.0",
     "dotenv": "^16.0.0",
+    "ethereum-waffle": "^3.4.4",
     "hardhat": "^2.9.7",
     "keccak256": "^1.0.6",
     "merkletreejs": "^0.2.31",

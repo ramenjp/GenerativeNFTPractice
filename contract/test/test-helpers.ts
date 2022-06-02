@@ -4,13 +4,13 @@ import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 const { expect } = require("chai");
 
 export const test_config = {
-  price: 0.05,
-  price_pre: 0.03,
-  contract_name: "KawaiiMetaCollage",
+  price: 5,
+  price_pre: 3,
+  contract_name: "GenerativeNFT",
   max_supply: 7777,
   max_mint: 10,
   presale_max_mint: 5,
-  symbol: "EDO",
+  symbol: "GNP",
 };
 
 export async function assertPreMint(
