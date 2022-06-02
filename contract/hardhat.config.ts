@@ -16,11 +16,6 @@ const config: HardhatUserConfig = {
         mnemonic: "test test test test test test test test test test test junk",
       },
     },
-    kovan: {
-      url: "https://kovan.optimism.io/",
-      chainId: 69,
-      accounts: [getEnvVariable("ACCOUNT_PRIVATE_KEY")],
-    },
     mainnet: {
       url: getEnvVariable("MAINNET_RPC", "https://infura.io/v3/"),
       chainId: 1,
@@ -29,16 +24,6 @@ const config: HardhatUserConfig = {
     rinkeby: {
       url: getEnvVariable("RINKEBY_RPC", "https://rinkeby.infura.io/v3/"),
       chainId: 4,
-      accounts: [getEnvVariable("ACCOUNT_PRIVATE_KEY")],
-    },
-    astar: {
-      url: "https://rpc.astar.network:8545",
-      chainId: 592,
-      accounts: [getEnvVariable("ACCOUNT_PRIVATE_KEY")],
-    },
-    shibuya: {
-      url: "https://rpc.shibuya.astar.network:8545",
-      chainId: 81,
       accounts: [getEnvVariable("ACCOUNT_PRIVATE_KEY")],
     },
   },

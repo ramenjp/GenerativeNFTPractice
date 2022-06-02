@@ -6,7 +6,7 @@
   "scripts": {
     "build": "hardhat compile",
     "dev": "hardhat node",
-    "flatten": "poa-solidity-flattener ./contracts/KawaiiMetaCollage.sol",
+    "flatten": "poa-solidity-flattener ./contracts/GenerativeNFT.sol",
     "lint:eslint": "eslint . --ext ts,tsx",
     "fix:eslint": "eslint . --ext ts,tsx --fix"
   },
@@ -19,6 +19,7 @@
     "dotenv": "^16.0.0",
     "hardhat": "^2.9.7",
     "keccak256": "^1.0.6",
-    "merkletreejs": "^0.2.31"
+    "merkletreejs": "^0.2.31",
+    "typechain": "^8.0.0"
   }
 }
