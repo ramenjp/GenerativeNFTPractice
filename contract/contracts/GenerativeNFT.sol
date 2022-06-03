@@ -9,7 +9,7 @@ import "hardhat/console.sol";
 contract GenerativeNFT is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
-    string baseURI = "";
+    string baseURI = "https://gateway.pinata.cloud/ipfs/QmWBnhNumSn8FSHfzRraN37kBbNa7GQWByhkv4P4Upfuum";
     string public baseExtension = ".json";
     uint256 private preCost = 2 ether;
     uint256 private publicCost = 3 ether;
@@ -18,7 +18,7 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
     bool public paused = true;
     bool public revealed = false;
     bool public presale = true;
-    string public notRevealedUri;
+    // string public notRevealedUri;
     uint256 private whiteListCount = 0;
     mapping(address => uint256) private whiteLists;
 
@@ -100,9 +100,9 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
             "ERC721Metadata: URI query for nonexistent token"
         );
 
-        if (revealed == false) {
-            return notRevealedUri;
-        }
+        // if (revealed == false) {
+        //     return notRevealedUri;
+        // }
 
         string memory currentBaseURI = _baseURI();
         return
@@ -141,9 +141,9 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
         }
     }
 
-    function setNotRevealedURI(string memory _notRevealedURI) public onlyOwner {
-        notRevealedUri = _notRevealedURI;
-    }
+    // function setNotRevealedURI(string memory _notRevealedURI) public onlyOwner {
+    //     notRevealedUri = _notRevealedURI;
+    // }
 
     function setBaseURI(string memory _newBaseURI) public onlyOwner {
         baseURI = _newBaseURI;

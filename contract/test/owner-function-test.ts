@@ -10,7 +10,6 @@ describe("Contract OwnerFunction test", function () {
   let alis: SignerWithAddress;
   let ad: GenerativeNFT;
   let addrs;
-  const not_revealed_uri = "not_revealed_uri";
 
   beforeEach(async function () {
     // @ts-ignore
@@ -18,8 +17,7 @@ describe("Contract OwnerFunction test", function () {
     const contract = await ethers.getContractFactory(test_config.contract_name);
     ad = (await contract.deploy(
       test_config.contract_name,
-      test_config.symbol,
-      not_revealed_uri
+      test_config.symbol
     )) as GenerativeNFT;
     await ad.deployed();
 

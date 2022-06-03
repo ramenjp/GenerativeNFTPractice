@@ -8,8 +8,7 @@ async function main() {
   console.log("Deploying ERC721 token...");
   const token = await deploycontract.deploy(
     getEnvVariable("CONTRACT_NAME"),
-    getEnvVariable("CONTRACT_SYMBOL"),
-    getEnvVariable("IPFS_JSON")
+    getEnvVariable("CONTRACT_SYMBOL")
   );
 
   await token.deployed();

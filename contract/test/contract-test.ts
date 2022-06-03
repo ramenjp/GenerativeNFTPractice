@@ -18,16 +18,13 @@ describe(`${test_config.contract_name} contract`, function () {
   let ad: any;
   let addrs;
 
-  const not_revealed_uri = "not_revealed_uri";
-
   beforeEach(async function () {
     // @ts-ignore
     [owner, bob, alis, ...addrs] = await ethers.getSigners();
     const contract = await ethers.getContractFactory(test_config.contract_name);
     ad = (await contract.deploy(
       test_config.contract_name,
-      test_config.symbol,
-      not_revealed_uri
+      test_config.symbol
     )) as any;
 
     await ad.deployed();
