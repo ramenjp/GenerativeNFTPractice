@@ -1,2 +1,7 @@
 id,name,description,external_url,Background,Skin,Clothes,Expression,Eyes,Headgear,Accessories
 1,PracticeR#0001,This is Practice pj ,https://github.com/ramenjp/GenerativeNFTPractice ,LightGray,Abstract,AstronautSuit,Angry,Excited,3dGlasses,bat
+2,PracticeR#0002,This is Practice pj ,https://github.com/ramenjp/GenerativeNFTPractice ,Champagne,Abstract,AstronautSuit,Angry,Excited,3dGlasses,bat
+3,PracticeR#0003,This is Practice pj ,https://github.com/ramenjp/GenerativeNFTPractice ,Champagne,Damascus,Karate,Angry,Excited,Halo,bat
+4,PracticeR#0004,This is Practice pj ,https://github.com/ramenjp/GenerativeNFTPractice ,Champagne,Abstract,Karate,Angry,Excited,Halo,Goldchain
+5,PracticeR#0005,This is Practice pj ,https://github.com/ramenjp/GenerativeNFTPractice ,LightGray,Damascus,Karate,Angry,Excited,Halo,Goldchain
+6,PracticeR#0006,This is Practice pj ,https://github.com/ramenjp/GenerativeNFTPractice ,LightGray,Damascus,AstronautSuit,Neutral,Excited,Halo,Goldchain

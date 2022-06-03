@@ -1,0 +1,15 @@
+{
+  "name": "PracticeR#0003",
+  "image": "ipfs://QmRZbFhyhBEzGMYBgF9o2QFT73395gzZoYqGFSE8m1piRg",
+  "description": "This is Practice pj ",
+  "external_url": "https://github.com/ramenjp/GenerativeNFTPractice ",
+  "attributes": [
+    { "trait_type": "Background", "value": "Champagne" },
+    { "trait_type": "Skin", "value": "Damascus" },
+    { "trait_type": "Clothes", "value": "Karate" },
+    { "trait_type": "Expression", "value": "Angry" },
+    { "trait_type": "Eyes", "value": "Excited" },
+    { "trait_type": "Headgear", "value": "Halo" },
+    { "trait_type": "Accessories", "value": "bat" }
+  ]
+}
