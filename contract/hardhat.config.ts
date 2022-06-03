@@ -5,7 +5,7 @@ require("./scripts/tasks");
 import { getEnvVariable } from "./scripts/helpers";
 import "@typechain/hardhat";
 
-const config: HardhatUserConfig = {
+const config = {
   defaultNetwork: "localhost",
   solidity: "0.8.9",
   networks: {
@@ -22,9 +22,14 @@ const config: HardhatUserConfig = {
       accounts: [getEnvVariable("ACCOUNT_PRIVATE_KEY")],
     },
     rinkeby: {
-      url: getEnvVariable("RINKEBY_RPC", "https://rinkeby.infura.io/v3/"),
+      url: "https://rinkeby.infura.io/v3/" + getEnvVariable("RINKEBY_RPC"),
       chainId: 4,
       accounts: [getEnvVariable("ACCOUNT_PRIVATE_KEY")],
+    },
+  },
+  etherscan: {
+    apiKey: {
+      rinkeby: [getEnvVariable("ETHERSCAN_APIKEY")],
     },
   },
 };

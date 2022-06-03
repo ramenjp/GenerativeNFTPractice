@@ -24,5 +24,9 @@
     "keccak256": "^1.0.6",
     "merkletreejs": "^0.2.31",
     "typechain": "^8.0.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-etherscan": "^3.0.4",
+    "@nomiclabs/hardhat-waffle": "^2.0.3"
   }
 }
