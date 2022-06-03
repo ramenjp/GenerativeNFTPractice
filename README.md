@@ -8,3 +8,5 @@ Generative NFT PJ の練習レポジトリです。
 - openZeppelin
 - Hardhat
 - Infura
+- Typechain
+- IPFS(Pinata)
