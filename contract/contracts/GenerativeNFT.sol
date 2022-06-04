@@ -9,7 +9,7 @@ import "hardhat/console.sol";
 contract GenerativeNFT is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
-    string baseURI = "https://gateway.pinata.cloud/ipfs/QmWBnhNumSn8FSHfzRraN37kBbNa7GQWByhkv4P4Upfuum";
+    string baseURI = "https://gateway.pinata.cloud/ipfs/QmWBnhNumSn8FSHfzRraN37kBbNa7GQWByhkv4P4Upfuum/";
     string public baseExtension = ".json";
     uint256 private preCost = 2 ether;
     uint256 private publicCost = 3 ether;
