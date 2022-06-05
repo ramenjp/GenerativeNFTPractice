@@ -4,8 +4,8 @@ import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
 const { expect } = require("chai");
 
 export const test_config = {
-  price: 3,
-  price_pre: 2,
+  price: 0.03,
+  price_pre: 0.02,
   contract_name: "GenerativeNFT",
   max_supply: 7777,
   max_mint: 10,

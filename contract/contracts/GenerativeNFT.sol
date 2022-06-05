@@ -9,10 +9,10 @@ import "hardhat/console.sol";
 contract GenerativeNFT is ERC721Enumerable, Ownable {
     using Strings for uint256;
 
-    string baseURI = "https://gateway.pinata.cloud/ipfs/QmWBnhNumSn8FSHfzRraN37kBbNa7GQWByhkv4P4Upfuum/";
+    string public baseURI = "https://gateway.pinata.cloud/ipfs/QmWBnhNumSn8FSHfzRraN37kBbNa7GQWByhkv4P4Upfuum/";
     string public baseExtension = ".json";
-    uint256 private preCost = 2 ether;
-    uint256 private publicCost = 3 ether;
+    uint256 private preCost = 0.02 ether;
+    uint256 private publicCost = 0.03 ether;
     uint256 public maxSupply = 7777;
     uint256 public publicMaxPerTx = 10;
     bool public paused = true;
@@ -38,12 +38,6 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
         uint256 supply = totalSupply();
         uint256 cost = publicCost * _mintAmount;
         mintCheck(_mintAmount, supply, cost);
-        require(!presale, "Public mint is paused while Presale is active.");
-        require(
-            _mintAmount <= publicMaxPerTx,
-            "Mint amount cannot exceed 10 per Tx."
-        );
-
         for (uint256 i = 1; i <= _mintAmount; i++) {
             _safeMint(msg.sender, supply + i);
         }
@@ -71,7 +65,7 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
         uint256 supply,
         uint256 cost
     ) private view {
-        require(!paused, "Mint is not active.");
+        // require(!paused, "Mint is not active.");
         require(_mintAmount > 0, "Mint amount cannot be zero");
         require(
             supply + _mintAmount <= maxSupply,
@@ -187,13 +181,11 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
     }
 
     function withdraw() public virtual {
-        // DAO account 0xa7295305596a3e4953271585a8cb44dffd069c24
         (bool dao, ) = payable(0xa7295305596a3E4953271585A8cB44DFfD069c24).call{
             value: (address(this).balance * 30) / 100
         }("");
         require(dao);
 
-        // TEAM account 0x7D7C9681342DdB120D4239C82f4603D09dA67F01
         (bool team, ) = payable(0x7D7C9681342DdB120D4239C82f4603D09dA67F01)
             .call{value: address(this).balance}("");
         require(team);
