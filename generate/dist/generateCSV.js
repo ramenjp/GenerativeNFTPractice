@@ -28,11 +28,6 @@ const csvWriter = (0, csv_writer_1.createObjectCsvWriter)({
     ],
     append: true,
 });
-const writeCSV = async (data) => {
-    await csvWriter.writeRecords(data).then(() => {
-        console.log("index :", data.index);
-    });
-};
 Accessories.map((accessorie, i) => {
     Background.map((background) => {
         Clothes.map((cloth) => {

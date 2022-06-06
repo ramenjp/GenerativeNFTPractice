@@ -12,7 +12,7 @@
     "tojson": "tsc && node  dist/toJson.js",
     "shuffle": "metashu -i json/packed.json -o json/"
   },
-  "author": "hayatti",
+  "author": "ramenjp",
   "license": "MIT",
   "dependencies": {
     "@ndujalabs/metashu": "^0.2.2",
