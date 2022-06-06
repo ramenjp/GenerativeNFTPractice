@@ -15,10 +15,13 @@
   "license": "MIT",
   "dependencies": {
     "@ndujalabs/metashu": "^0.2.2",
+    "@types/csv-stringify": "^3.1.0",
     "axios": "^0.26.0",
     "base-path-converter": "^1.0.2",
     "commander": "^9.2.0",
     "csv-parse": "^5.0.4",
+    "csv-stringify": "^6.1.0",
+    "csv-writer": "^1.6.0",
     "recursive-fs": "^2.1.0",
     "sharp": "^0.30.1"
   },
