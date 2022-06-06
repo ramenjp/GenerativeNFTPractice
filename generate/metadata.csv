@@ -1,4 +1,4 @@
-id,name,description,external_url,Background,Skin,Clothes,Expression,Eyes,Headgear,Accessories,
+id,name,description,external_url,Background,Skin,Clothes,Expression,Eyes,Headgear,Accessories
 1,Practice#0001,This is Practice pj,https://github.com/ramenjp/GenerativeNFTPractice,Champagne,Abstract,AstronautSuit,Angry,Angry,3dGlasses,bat
 5,Practice#0005,This is Practice pj,https://github.com/ramenjp/GenerativeNFTPractice,Champagne,Abstract,AstronautSuit,Angry,Excited,3dGlasses,bat
 6,Practice#0006,This is Practice pj,https://github.com/ramenjp/GenerativeNFTPractice,Champagne,Damascus,AstronautSuit,Angry,Excited,3dGlasses,bat
