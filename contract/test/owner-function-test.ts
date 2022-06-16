@@ -15,10 +15,7 @@ describe("Contract OwnerFunction test", function () {
     // @ts-ignore
     [owner, bob, alis, ...addrs] = await ethers.getSigners();
     const contract = await ethers.getContractFactory(test_config.contract_name);
-    ad = (await contract.deploy(
-      test_config.contract_name,
-      test_config.symbol
-    )) as GenerativeNFT;
+    ad = (await contract.deploy()) as GenerativeNFT;
     await ad.deployed();
 
     // Ensure contract is paused/disabled on deployment

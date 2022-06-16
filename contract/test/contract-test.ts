@@ -22,10 +22,7 @@ describe(`${test_config.contract_name} contract`, function () {
     // @ts-ignore
     [owner, bob, alis, ...addrs] = await ethers.getSigners();
     const contract = await ethers.getContractFactory(test_config.contract_name);
-    ad = (await contract.deploy(
-      test_config.contract_name,
-      test_config.symbol
-    )) as any;
+    ad = (await contract.deploy()) as any;
 
     await ad.deployed();
 

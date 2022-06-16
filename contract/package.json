@@ -17,13 +17,14 @@
   "dependencies": {
     "@openzeppelin/contracts": "^4.6.0",
     "@poanet/solidity-flattener": "^3.0.7",
-    "@typechain/ethers-v5": "^10.0.0",
+    "@typechain/ethers-v5": "^10.1.0",
+    "@typechain/hardhat": "^6.1.1",
     "dotenv": "^16.0.0",
     "ethereum-waffle": "^3.4.4",
-    "hardhat": "^2.9.7",
+    "hardhat": "^2.9.9",
     "keccak256": "^1.0.6",
     "merkletreejs": "^0.2.31",
-    "typechain": "^8.0.0"
+    "typechain": "^8.1.0"
   },
   "devDependencies": {
     "@nomiclabs/hardhat-etherscan": "^3.0.4",

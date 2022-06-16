@@ -22,11 +22,7 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
     uint256 private whiteListCount = 0;
     mapping(address => uint256) private whiteLists;
 
-    constructor(
-        string memory _name,
-        string memory _symbol
-    ) ERC721(_name, _symbol) {       
-    }
+    constructor() ERC721("GenerativeNFT", "GNT") {}
 
     // internal
     function _baseURI() internal view virtual override returns (string memory) {
