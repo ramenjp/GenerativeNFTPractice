@@ -111,7 +111,7 @@ async function compositeImage(trait: TraitData, zeroPaddingLength: number) {
       console.log("First trait path is null. " + first_trait_path);
     const image = sharp(first_trait_path);
     image.composite(rest_trait);
-    const file_name = zeroPadding(trait.id, zeroPaddingLength) + ".png";
+    const file_name = trait.id + ".png";
 
     image
       .toFile(traitConfig.output_dir + file_name)
@@ -139,6 +139,6 @@ function fnSort(
   );
 }
 
-function zeroPadding(num: string, len: number) {
-  return (Array(len).join("0") + num).slice(-len);
-}
+// function zeroPadding(num: string, len: number) {
+//   return (Array(len).join("0") + num).slice(-len);
+// }
