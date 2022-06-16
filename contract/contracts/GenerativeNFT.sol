@@ -25,7 +25,7 @@ contract GenerativeNFT is ERC721Enumerable, Ownable {
     constructor(
         string memory _name,
         string memory _symbol
-    ) ERC721(_name, _symbol) {
+    ) ERC721(_name, _symbol) {       
     }
 
     // internal
