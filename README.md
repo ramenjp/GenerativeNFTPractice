@@ -1,8 +1,7 @@
 ## What is
 
 Generative NFT PJ の練習レポジトリです。
-frontend は作成しておらず、直コンで mint しています。
-動作確認は Network は Riknkeby, testnet Opensea で行いました。
+動作確認は Network は Rinkeby, testnet Opensea で行いました。
 
 ## 使用技術
 
