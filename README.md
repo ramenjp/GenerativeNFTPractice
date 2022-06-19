@@ -1,7 +1,8 @@
 ## What is
 
-Generative NFT PJ の練習レポジトリです。
-動作確認は Network は Rinkeby, testnet Opensea で行いました。
+Generative NFT PJ の練習レポジトリです。  
+動作確認は Network は Rinkeby, testnet Opensea で行いました。  
+Contract: https://rinkeby.etherscan.io/address/0x5d241e88a2666f2F4C4b4C27113E43098E9561a5
 
 ## 使用技術
 
