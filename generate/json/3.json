@@ -1,1 +1,14 @@
-{"name":"Practice#0003","description":"This is Practice pj","external_url":"https://github.com/ramenjp/GenerativeNFTPractice","attributes":[{"trait_type":"Background","value":"Champagne"},{"trait_type":"Skin","value":"Abstract"},{"trait_type":"Clothes","value":"AstronautSuit"},{"trait_type":"Expression","value":"Angry"},{"trait_type":"Eyes","value":"Angry"},{"trait_type":"Headgear","value":"Halo"},{"trait_type":"Accessories","value":"bat"}]}
+{
+  "name": "Practice#0003",
+  "description": "This is Practice pj",
+  "external_url": "https://github.com/ramenjp/GenerativeNFTPractice",
+  "attributes": [
+    { "trait_type": "Background", "value": "Champagne" },
+    { "trait_type": "Skin", "value": "Abstract" },
+    { "trait_type": "Clothes", "value": "AstronautSuit" },
+    { "trait_type": "Expression", "value": "Angry" },
+    { "trait_type": "Eyes", "value": "Angry" },
+    { "trait_type": "Headgear", "value": "Halo" },
+    { "trait_type": "Accessories", "value": "bat" }
+  ]
+}

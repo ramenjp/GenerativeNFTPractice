@@ -7,6 +7,7 @@ frontend は作成しておらず、直コンで mint しています。
 ## 使用技術
 
 - Solidity 0.8.9
+- Next.js 12.1.6
 - TypeScript
 - openZeppelin
 - Hardhat
@@ -23,6 +24,13 @@ frontend は作成しておらず、直コンで mint しています。
 - yarn flatten
   - etherscan 上で verify するための flat 化されたコードを生成
 
+### front フォルダ
+
+- yarn install
+  - package インストール
+- yarn dev
+  - 開発環境の立ち上げ
+
 ### generate フォルダ
 
 - yarn generate
@@ -34,8 +42,5 @@ frontend は作成しておらず、直コンで mint しています。
 
 ## 今後やりたいこと
 
-メモとして残しておきます。
-
-- フロントエンド(mint ページ)の実装及び ethers.js を用いた Provider からのコントラクトの呼び出し
 - reveal の実装
 - markletree を用いた WhiteList の実装
